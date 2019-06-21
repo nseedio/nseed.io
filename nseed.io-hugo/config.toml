@@ -1,0 +1,30 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "NSeed"
+theme = "kube"
+description = "NSeed, Cupcake ipsum dolor sit amet dessert chocolate cake caramels. Tootsie roll sugar plum tart brownie croissant topping lemon drops toffee. Lollipop powder I love carrot cake jelly beans I love biscuit I love gummi bears. Soufflé oat cake cotton candy chocolate cake."
+Paginate = 4
+[Params]
+  RSSLink = "/index.xml"
+  author = "newpixcom" # add your company name
+  github = "" # add your github profile name
+  twitter = "" # add your twitter profile
+  email = "myemail@myaddress.xxx"
+  custom_css = ["css/nseed-custom.css"]
+
+[[menu.main]]
+    name = "About"
+    weight = 10
+    url = "#kube-features"
+[[menu.main]]
+    name = "Blog"
+    weight = 20
+    url = "#blogs"
+[[menu.main]]
+    name = "News"
+    weight = 30
+    url = "#news"
+[[menu.main]]
+    name = "Contact"
+    weight = 40
+    url = "#contact"

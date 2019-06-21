@@ -1,0 +1,213 @@
+/******************************************************************/
+/**************************** Top Menu ****************************/
+#top {
+    position: fixed;
+    background: white;
+    width: 100%;
+    z-index: 1;
+}
+
+#top #top-nav-main li {
+    font-weight: 300;
+}
+
+.link-scroll {
+    cursor: pointer;
+}
+
+main {
+    padding-top: 70px;
+}
+
+#top-brand {
+    display: flex;
+    align-items: center;
+}
+
+#top-brand a[title="home"] {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#top-brand a[title="docs"] {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#top-brand a:not(:first-child) {
+    padding-left: 10px;
+}
+
+#top-brand a:hover {
+    text-decoration: underline;
+}
+
+#top-brand div:first-child {
+    padding-right: 20px;
+}
+
+@media (max-width: 768px){
+    #top {
+        position: static;
+    }
+}
+
+/******************************************************************/
+/************************ Above the fold **************************/
+.nseed-logo-large {
+    text-align: center; 
+}
+
+.code {
+    text-align: center;
+    margin: 0 auto;
+    font-family: monospace;
+    margin-top: 60px;
+}
+
+.code span {
+    padding: 12px;
+    background: black;
+    font-size: 23px;
+    color: white;
+}
+
+@media (max-width: 768px){
+    .code span {
+        font-size: 18px;
+    }
+}
+
+/******************************************************************/
+/*********************** Home page sections ***********************/
+.new-section {
+    position: relative;
+    margin-top: 100px;
+}
+
+.new-section:before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 3px;
+    top: 0;
+    left: 50%;
+    margin-left: -20px;
+    background: #176b27;
+}
+
+.new-section-heading {
+    padding-top: 60px;
+    text-align: center;
+}
+
+/******************************************************************/
+/******************* Lists (like blog and news) *******************/
+.list-date {
+    font-size: 12px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+a,
+#posts h2 a,
+#news-articles.custom-posts h2 a {
+    color: #176b27;
+}
+
+#posts.custom-posts,
+#news-articles.custom-posts {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0;
+    max-width: 100%;
+}
+
+#posts.custom-posts li,
+#news-articles.custom-posts li {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 10px;
+    padding: 20px;
+    min-width: 300px;
+    align-self: stretch;
+}
+
+#posts.custom-posts h2,
+#news-articles.custom-posts h2 {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 28px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+#posts.custom-posts h2 a,
+#news-articles.custom-posts h2 a {
+    text-decoration: none;
+}
+
+#news-articles {
+    list-style: none;
+    margin: auto;
+    margin-top: 48px;
+    text-align: center;
+}
+
+#kube-features h3,
+#kube-features h4 {
+    margin-bottom: 0;
+}
+
+/******************************************************************/
+/************************** Blog section **************************/
+.blog-button-wrapper,
+.news-button-wrapper {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.blog-button,
+.news-button {
+    border: 1px gray solid;
+    padding: 5px 10px;
+    margin: 0 auto;
+}
+
+.blog-button:hover,
+.blog-button:active,
+.news-button:hover,
+.news-button:active {
+    background: #176b27;
+}
+
+.blog-button:hover a,
+.blog-button:active a,
+.news-button:hover a,
+.news-button:active a {
+    color: white;
+}
+
+.blog-button a,
+.news-button a {
+    text-decoration: none;
+}
+
+/******************************************************************/
+/************************* Contact section ************************/
+.contact-text {
+    text-align: center;
+}
+
+.contact-text span {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}

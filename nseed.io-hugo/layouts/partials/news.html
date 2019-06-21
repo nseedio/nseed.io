@@ -1,0 +1,15 @@
+<section class="blog new-section" id="news">
+    <h2 class="new-section-heading">Latest News</h2>
+    <div class="news-button-wrapper">
+        <span class="news-button">
+            <a href="{{ .Site.BaseURL }}/news/">View All</a>
+        </span>
+    </div>
+    <div class="row">  
+        <ul id="news-articles" class="custom-posts">
+            {{ range first 3 (where .Data.Pages "Section" "news") }}
+                {{ partial "blog-summary" . }}
+            {{ end }}   
+        </ul>
+    </div>
+</section>
