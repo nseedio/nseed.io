@@ -11,6 +11,7 @@ Paginate = 4
   twitter = "" # add your twitter profile
   email = "myemail@myaddress.xxx"
   custom_css = ["css/nseed-custom.css"]
+  googleAnalytics = "UA-142586684-1"
 
 [[menu.main]]
     name = "About"
