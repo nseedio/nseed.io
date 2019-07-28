@@ -16,7 +16,7 @@ Paginate = 4
 [[menu.main]]
     name = "About"
     weight = 10
-    url = "#kube-features"
+    url = "#about"
 [[menu.main]]
     name = "Blog"
     weight = 20

@@ -3,66 +3,69 @@
 {{ define "main"}}
 
 <div id="main">
-    <!-- <div id="hero">
-        <h1>{{.Title}}</h1>
-        <p>{{.Description}}</p>
-    </div>
-   -->
     <div class="nseed-logo-large">
         <img alt="NSeed logo" src="{{ "/img/logo_v11.png" | relURL }}" width="250">
     </div>
 
-    <div class="code">
+    <div class="nseed-code">
         <span>dotnet install nseed-cli</span>
     </div>
-  
-    <div id="kube-features">
+    <section class="nseed-section" id="about">
+        <h2 class="nseed-section-heading">What is NSeed?</h2>
         <div class="row gutters">
-            <div class="col col-6 item">
-                <!-- <figure>
-                    <img alt="Baseline" height="48" src="{{ "/img/kube/icon-baseline.png" | relURL }}" width="48">
-                </figure> -->
-                <h3>You are a .NET dev team</h3>
-                <p>and you're facing with data seeding issues on a daily basis? It's time to introduce the tool you've been waiting for: NSeed. Let's bring order to your data seeding and make your work more efficient.</p>
+            <div class="col col-6">
+                <img src="../img/website_placeholder.png" alt="">
             </div>
-        <div class="col col-6 item">
-            <!-- <figure>
-                <img alt="Typography" height="48" src="{{ "/img/kube/icon-typo.png" | relURL }}" width="48">
-            </figure> -->
-            <h3>NSeed is data orchestration tool</h3>
-            <p>that unifies data seeding in .NET solutions. It saves time and prevents errors typical for manual data entry and data generation. You can use it in combination with your typical .NET tools: Tool1, Tool2, Tool3 or Tool4.</p>
+            <div class="col col-6">
+                <img src="../img/website_placeholder.png" alt="">
+            </div>
         </div>
-        <!-- <div class="col col-4 item">
-            <figure>
-            <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
-            </figure>
-            <h3>Minimalism</h3>
-            <p>We strongly believe in minimalism as a general concept as well as a practical approach to everyday life.</p>
-        </div> -->
-    </div>
-
-        <div class="row gutters">
-        <div class="col col-6 item">
-            <h4>NSeed works in a way that</h4>
-            <p>does this and then does that and then that. Explain here how it works in a few sentences. Explain here how it works in a few sentences. Explain here how it works in a few sentences.</p>
+        <div class="nseed-howto-gif">
+            <img src="../img/demo.gif" alt="">
         </div>
-        <div class="col col-6 item">
-            <h4>NSeed works in a way that</h4>
-            <p>does this and then does that and then that. Explain here how it works in a few sentences. Explain here how it works in a few sentences. Explain here how it works in a few sentences.</p>
+        <div>
+            <div class="row gutters nseed-about-part">
+                <div class="col col-6 item">
+                    <h3>About NSeed</h3>
+                    <p>Cupcake ipsum dolor sit amet macaroon pie. Ice cream bear claw cheesecake biscuit topping cupcake. Chocolate bar apple pie cheesecake soufflé sugar plum halvah. Topping gummies chupa chups halvah biscuit chocolate. Cake cupcake pudding ice cream wafer carrot cake toffee. Soufflé cake I love cookie biscuit lemon drops brownie toffee jujubes. Pudding toffee brownie donut I love jelly beans I love jelly.</p>
+                </div>
+                <div class="col col-6 item">
+                    <img src="../img/code_placeholder.png" alt="">
+                </div>
+            </div>
+            <div class="row gutters nseed-about-part">
+                <div class="col col-6 item">
+                    <img src="../img/code_placeholder.png" alt="">
+                </div>
+                <div class="col col-6 item">
+                    <h3>About NSeed</h3>
+                    <p>Cupcake ipsum dolor sit amet macaroon pie. Ice cream bear claw cheesecake biscuit topping cupcake. Chocolate bar apple pie cheesecake soufflé sugar plum halvah. Topping gummies chupa chups halvah biscuit chocolate. Cake cupcake pudding ice cream wafer carrot cake toffee. Soufflé cake I love cookie biscuit lemon drops brownie toffee jujubes. Pudding toffee brownie donut I love jelly beans I love jelly.</p>
+                </div>
+            </div>
+            <div class="row gutters nseed-about-part">
+                <div class="col col-6 item">
+                    <h3>About NSeed</h3>
+                    <p>Cupcake ipsum dolor sit amet macaroon pie. Ice cream bear claw cheesecake biscuit topping cupcake. Chocolate bar apple pie cheesecake soufflé sugar plum halvah. Topping gummies chupa chups halvah biscuit chocolate. Cake cupcake pudding ice cream wafer carrot cake toffee. Soufflé cake I love cookie biscuit lemon drops brownie toffee jujubes. Pudding toffee brownie donut I love jelly beans I love jelly.</p>
+                </div>
+                <div class="col col-6 item">
+                    <img src="../img/code_placeholder.png" alt="">
+                </div>
+            </div>
+            <div class="row gutters nseed-about-part">
+                <div class="col col-6 item">
+                    <img src="../img/code_placeholder.png" alt="">
+                </div>
+                <div class="col col-6 item">
+                    <h3>About NSeed</h3>
+                    <p>Cupcake ipsum dolor sit amet macaroon pie. Ice cream bear claw cheesecake biscuit topping cupcake. Chocolate bar apple pie cheesecake soufflé sugar plum halvah. Topping gummies chupa chups halvah biscuit chocolate. Cake cupcake pudding ice cream wafer carrot cake toffee. Soufflé cake I love cookie biscuit lemon drops brownie toffee jujubes. Pudding toffee brownie donut I love jelly beans I love jelly.</p>
+                </div>
+            </div>
         </div>
-        <!-- <div class="col col-4 item">
-            <h4>License</h4>
-            <p>Kube licensed under <a href="https://opensource.org/licenses/MIT">MIT</a>.<br>
-            Kube Framework is absolutely free for personal or commercial use.</p>
-        </div> -->
-        </div>
-
-    </div>
-
+    </section>
     <div>
         {{ partial "blogs.html" . }}
     </div>
-    <div class="new-section" id="news">
+    <div class="nseed-section" id="news">
         <a class="twitter-timeline" href="https://twitter.com/nseedio?ref_src=twsrc%5Etfw">Tweets by nseedio</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
     <div>

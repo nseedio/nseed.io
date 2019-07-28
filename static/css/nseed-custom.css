@@ -1,3 +1,7 @@
+body {
+    padding: 0 20px;
+}
+
 /******************************************************************/
 /**************************** Top Menu ****************************/
 #top {
@@ -62,34 +66,40 @@ main {
     text-align: center; 
 }
 
-.code {
+.nseed-code {
     text-align: center;
     margin: 0 auto;
     font-family: monospace;
     margin-top: 60px;
+    margin-bottom: 120px;
 }
 
-.code span {
+.nseed-code span {
     padding: 12px;
     background: black;
     font-size: 23px;
     color: white;
 }
 
+.nseed-howto-gif {
+    max-width: 700px;
+    margin: 60px auto;
+}
+
 @media (max-width: 768px){
-    .code span {
+    .nseed-code span {
         font-size: 18px;
     }
 }
 
 /******************************************************************/
 /*********************** Home page sections ***********************/
-.new-section {
+.nseed-section {
     position: relative;
     margin-top: 100px;
 }
 
-.new-section:before {
+.nseed-section:before {
     position: absolute;
     content: '';
     width: 40px;
@@ -100,9 +110,14 @@ main {
     background: #176b27;
 }
 
-.new-section-heading {
+.nseed-section-heading {
+    padding-bottom: 30px;
     padding-top: 60px;
     text-align: center;
+}
+
+.nseed-about-part {
+    margin: 100px 0;
 }
 
 /******************************************************************/
@@ -162,8 +177,8 @@ a,
     text-align: center;
 }
 
-#kube-features h3,
-#kube-features h4 {
+#about h3,
+#about h4 {
     margin-bottom: 0;
 }
 
