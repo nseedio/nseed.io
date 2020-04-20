@@ -1,5 +1,6 @@
 body {
     padding: 0 20px;
+    overflow: hidden;
 }
 
 /******************************************************************/
@@ -57,6 +58,16 @@ main {
 @media (max-width: 768px){
     #top {
         position: static;
+        display: flex;
+        height: 88px;
+        padding-left: 0;
+    }
+    #top #top-brand {
+        position: static;
+        display: flex;
+    }
+    main {
+        padding-top: 0;
     }
 }
 
