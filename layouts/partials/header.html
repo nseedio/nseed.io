@@ -17,25 +17,4 @@
             <a href="https://github.com/our-team/nseed" target="_blank" title="docs">Docs</a>
         </div>
     </div>
-    <nav id="top-nav-main">
-         <ul>
-            {{ $currentPage := . }}
-            {{ range .Site.Menus.main }}
-            <li>
-                <a data-where="{{ .URL }}" class="link-scroll">
-                    {{ .Name }}
-                </a>
-            </li>
-            {{end}}
-        </ul>
-    </nav>
-    <nav id="top-nav-extra"> 
-      <ul>
-        {{ range .Site.Menus.extra }} 
-          <li>
-            <a href="{{ .Permalink }}">{{ .Name }}</a>
-          </li>
-        {{ end }}  
-      </ul>
-    </nav>
 </div>
