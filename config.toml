@@ -1,4 +1,5 @@
 baseURL = "/"
+googleAnalytics = "UA-142586684-1"
 languageCode = "en-us"
 title = "NSeed"
 theme = "kube"
@@ -11,4 +12,3 @@ Paginate = 4
   twitter = "nseedio" # add your twitter profile
   email = "team@nseed.io"
   custom_css = ["css/nseed-custom.css"]
-  googleAnalytics = "UA-142586684-1"
