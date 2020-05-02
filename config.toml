@@ -7,8 +7,8 @@ Paginate = 4
 [Params]
   RSSLink = "/index.xml"
   author = "NSeed" # add your company name
-  github = "" # add your github profile name
-  twitter = "" # add your twitter profile
-  email = "myemail@myaddress.xxx"
+  github = "nseedio" # add your github profile name
+  twitter = "nseedio" # add your twitter profile
+  email = "team@nseed.io"
   custom_css = ["css/nseed-custom.css"]
   googleAnalytics = "UA-142586684-1"
